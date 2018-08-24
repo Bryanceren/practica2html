@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculum vitae</title>
+</head>
+<body>
+
+    <center> 
+        <h1>Curriculum vitae</h1>
+    </center>
+    <form action="mailto:String@string.com" method="get">
+            <fieldset>
+               <legend>Personal data</legend>
+               <label for="dui" id="labeldui" name="labeldui">DUI: </label>
+               <input type="text" name="dui" id="dui" placeholder="048164128" pattern=".{9,}" title="mas de 9 caracteres" required>
+
+               <label for="fname" id="labelfname" name="labelfname">First name: </label>
+               <input type="text" name="fname" id="fname" placeholder="First name" required>
+
+               <label for="lname" id="labellname" name="labellname">Last name: </label>
+               <input type="text" name="lname" id="lname" placeholder="Last name">
+
+               <label  id="labelrmale" name="labelrmale">Gender:</label>
+               <input type="radio" name="rmale" id="rmale" value="M">
+               <label for="rmale" id="labelrmale" name="labelrmale">M</label>
+               <input type="radio" name="rmale" id="rfemale" value="F">
+               <label for="rfemale" id="labelrmale" name="labelrmale">F</label>
+               <br>
+               <label for="contactn" id="labelcontactn" name="labelcontactn">Contact Number: </label>
+               <input type="text" name="contactn" id="contactn" >
+
+
+               <label for="bdate" id="labelbdate" name="labelbdate">Birthdate: </label>
+               <input type="date" name="bdate" id="bdate" >
+
+               <label for="menu" id="labelmenu" name="labelmenu">Civil Status: </label>
+               <select name="menu" id="menu">
+                    <option value="Single" selected>Single</option>
+                    <option value="Married">Married</option>
+                </select>
+
+                <label for="fileToUpload" id="labelfileToUpload" name="labelfileToUpload">Image</label>
+                <input type="file" name="fileToUpload" id="fileToUpload">  
+            </fieldset>
+            <fieldset>
+                <legend>Work Experience</legend>
+                <textarea id="wexperience" name="wexperience" rows="8" cols="250" placeholder="Experience"></textarea> 
+            </fieldset>
+            <fieldset>
+                    <legend>Academic training</legend>
+                    <textarea id="actraining" name="actraining" rows="8" cols="250" placeholder="Academic training"></textarea> 
+                </fieldset>
+            <fieldset>
+                <legend>Further training</legend>
+                     <fieldset>
+                         <legend>Programming languages</legend>
+                         <input type="checkbox" name="java" id= "java" > 
+                         <label for="java" name="labeljava" id="labeljava">Java</label>
+                         <input type="checkbox" name="csharp" id= "csharp" > 
+                         <label for="csharp" name="labelcsharp" id="labelcsharp">C#</label>
+                         <input type="checkbox" name="Phyton" id= "Phyton" > 
+                         <label for="Phyton" name="labelPhyton" id="labelPhyton">Phyton</label>
+                         <input type="checkbox" name="cpp" id= "cpp" checked> 
+                         <label for="cpp" name="labelcpp" id="labelcpp">C++</label>
+                         <input type="checkbox" name="Ruby" id= "Ruby" checked> 
+                         <label for="Ruby" name="labelRuby" id="labelRuby">Ruby</label>
+                     </fieldset>
+                     <fieldset>
+                            <legend>Web Technologies</legend>
+                            <input type="checkbox" name="HTML5" id= "HTML5" > 
+                            <label for="HTML5" name="labelHTML5" id="labelHTML5">HTML5</label>
+                            <input type="checkbox" name="CSS" id= "CSS" > 
+                            <label for="CSS" name="labelCSS" id="labelCSS">CSS/CSS3</label>
+                            <input type="checkbox" name="materialize" id= "materialize" > 
+                            <label for="materialize" name="labelmaterialize" id="labelmaterialize">materialize Css</label>
+                            <input type="checkbox" name="JavaScript" id= "JavaScript" checked> 
+                            <label for="JavaScript" name="labelJavaScript" id="labelJavaScript">JavaScript</label>
+                            <input type="checkbox" name="Node" id= "Node" checked> 
+                            <label for="Node" name="labelNode" id="labelNode">Node.js</label>
+                            <input type="checkbox" name="Spring" id= "Spring" checked> 
+                            <label for="Spring" name="labelSpring" id="labelSpring">Spring MVC</label>
+                        </fieldset>
+            </fieldset>
+            <input type="submit" value="Send" name="submit" id="submit">
+            <input type="button" value= "Cancel"name="Cancel" id="Cancel">
+    </form>
+</body>
+</html>
